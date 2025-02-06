@@ -35,6 +35,10 @@ class PreferencesManager @Inject constructor(
         }
     }
 
+     fun remove() {
+        sharedPreferences.edit().remove("otp_index").commit()
+        sharedPreferences.edit().remove("id").commit()
+    }
 
     fun getToken(): String? = sharedPreferences.getString("token", null)
     fun getBaseUrl(): String? = sharedPreferences.getString("Base_url", null)
