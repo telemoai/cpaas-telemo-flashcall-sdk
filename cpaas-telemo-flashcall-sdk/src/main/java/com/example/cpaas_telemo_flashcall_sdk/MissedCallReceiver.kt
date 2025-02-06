@@ -28,7 +28,7 @@ class MissedCallReceiver : BroadcastReceiver() {
                 val id = preferencesManager.getid()
                 val appId = preferencesManager.getAppId()
 
-                processMissedCall(ctx, incomingNumber, id, otpIndex, callback, appId, repository)
+                processMissedCall(ctx, incomingNumber, id, otpIndex, callback, appId, repository,preferencesManager)
             }
         }
     }
@@ -44,7 +44,9 @@ class MissedCallReceiver : BroadcastReceiver() {
         otpIndex: String?,
         callback: FlashCallback?,
         appId: String?,
-        repository: FlashRepository
+        repository: FlashRepository,
+        preferencesManager: PreferencesManager
+
     ) {
         // Sanitize and process the incoming number
         val sanitizedNumber = incomingNumber.replace("+", "")
@@ -63,13 +65,19 @@ class MissedCallReceiver : BroadcastReceiver() {
                 )
 
                 if (response.status == 200) {
+                    preferencesManager.remove()
+
                     Log.d("MissedCallReceiver", "Verification successful!")
                     callback?.onSuccess("Verification successful!")
                 } else {
+                    preferencesManager.remove()
+
                     Log.e("MissedCallReceiver", "Verification failed: ${response.verification_status}")
                     callback?.onFailure("Verification failed: ${response.verification_status}")
                 }
             } catch (e: Exception) {
+                preferencesManager.remove()
+
                 Log.e("MissedCallReceiver", "Verification error: ${e.message}")
                 callback?.onFailure("Verification failed: ${e.message}")
             }
