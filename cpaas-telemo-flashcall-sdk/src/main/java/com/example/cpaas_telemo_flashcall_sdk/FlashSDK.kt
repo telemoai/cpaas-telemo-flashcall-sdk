@@ -93,8 +93,10 @@ class FlashSDK private constructor() {
             val id = response.get("id").asString
             val otpIndex = response.get("otp_index")?.asString
 
+            preferencesManager?.saveId(id)
+
             otpIndex?.let {
-                preferencesManager?.saveOtpIndex(it, id)
+                preferencesManager?.saveOtpIndex(it)
                // flashCallback?.onSuccess("OTP Index: $it")
             }
         } else {

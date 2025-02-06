@@ -21,13 +21,20 @@ class PreferencesManager @Inject constructor(
         }
     }
 
-    fun saveOtpIndex(otpIndex: String, id: String) {
+    fun saveOtpIndex(otpIndex: String) {
         sharedPreferences.edit().apply {
             putString("otp_index", otpIndex)
+            apply()
+        }
+    }
+
+    fun saveId( id: String) {
+        sharedPreferences.edit().apply {
             putString("id", id)
             apply()
         }
     }
+
 
     fun getToken(): String? = sharedPreferences.getString("token", null)
     fun getBaseUrl(): String? = sharedPreferences.getString("Base_url", null)
