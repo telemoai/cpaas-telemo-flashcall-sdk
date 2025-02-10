@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/CPAAS-TELEMO-FLASHCALL-SDK.iml" filepath="$PROJECT_DIR$/.idea/modules/CPAAS-TELEMO-FLASHCALL-SDK.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/CPAAS-TELEMO-FLASHCALL-SDK.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/CPAAS-TELEMO-FLASHCALL-SDK.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/CPAAS-TELEMO-FLASHCALL-SDK.app.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/CPAAS-TELEMO-FLASHCALL-SDK.app.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/CPAAS-TELEMO-FLASHCALL-SDK.app.main.iml" filepath="$PROJECT_DIR$/.idea/modules/app/CPAAS-TELEMO-FLASHCALL-SDK.app.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/CPAAS-TELEMO-FLASHCALL-SDK.app.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/CPAAS-TELEMO-FLASHCALL-SDK.app.unitTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/cpaas-telemo-flashcall-sdk/CPAAS-TELEMO-FLASHCALL-SDK.cpaas-telemo-flashcall-sdk.iml" filepath="$PROJECT_DIR$/.idea/modules/cpaas-telemo-flashcall-sdk/CPAAS-TELEMO-FLASHCALL-SDK.cpaas-telemo-flashcall-sdk.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/cpaas-telemo-flashcall-sdk/CPAAS-TELEMO-FLASHCALL-SDK.cpaas-telemo-flashcall-sdk.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/cpaas-telemo-flashcall-sdk/CPAAS-TELEMO-FLASHCALL-SDK.cpaas-telemo-flashcall-sdk.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/cpaas-telemo-flashcall-sdk/CPAAS-TELEMO-FLASHCALL-SDK.cpaas-telemo-flashcall-sdk.main.iml" filepath="$PROJECT_DIR$/.idea/modules/cpaas-telemo-flashcall-sdk/CPAAS-TELEMO-FLASHCALL-SDK.cpaas-telemo-flashcall-sdk.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/cpaas-telemo-flashcall-sdk/CPAAS-TELEMO-FLASHCALL-SDK.cpaas-telemo-flashcall-sdk.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/cpaas-telemo-flashcall-sdk/CPAAS-TELEMO-FLASHCALL-SDK.cpaas-telemo-flashcall-sdk.unitTest.iml" />
+    </modules>
+  </component>
+</project>
